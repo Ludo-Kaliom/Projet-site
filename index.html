@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Project: html-css</title>
+    <link href="./css/style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div id=cadre>
+        <div id=gauche>
+            <map name="map1">
+                <area shape="poly" href="./images/image1.jpg" alt="Image 1" title="Aller à l'image 1" coords="2,0,2,283,44,265,83,263,131,272,175,306,201,352,206,403,207,353,201,418,193,445,182,459,221,465,299,462,501,465,697,464,698,1">
+                <area shape="poly" href="./images/image2.jpg" alt="Aller à l'image 2" title="Image2" coords="2,286,58,266,121,268,161,294,199,348,207,407,192,453,165,462,2,466">
+            </map>
+            <div class=logo><img src="./images/logo2.jpg" alt="logo2"></div>
+            <div class=montage> <img usemap="#map1" src="./images/montage.jpg" alt="Aller vers montage.jpg"></div>
+            <div class=image1><img usemap="#map1" src="./images/image1.jpg" alt="Aller vers image1.jpg">
+                <img src="./images/image2.jpg" alt="Aller vers image2.jpg"></div>
+        </div>
+            
+        <div id=droite>
+            <h1>Un exemple de photomontage</h1>
+            <ol>
+                <li><a href="./images/image1.jpg">Lien vers l'image 1</a></li>
+                <li><a href="./images/image2.jpg">Lien vers l'image 2</a></li>
+                <li>Procédure :</li>
+                <ol>
+                    <li>Ouvrir les images dans Photoshop ;</li>
+                    <li>Choisir l'outil de sélection "lasso magnétique" ;</li>
+                    <li>Détourer sur l'image 2 la portion d'image que je veux copier avec le lasso magnétique" ;</li>
+                    <li>Utiliser CTRL+C pour copier la sélection ;</li>
+                    <li>Changer d'image et passer sur l'image 1 ;</li>
+                    <li>Utiliser CTRL+V pour coller la sélection précédente ;</li>
+                    <li>Enregistrer l'image au format .jpg.</li>
+                </ol>
+                <li><a href="./images/montage.jpg">Lien vers le photomontage</a></li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
